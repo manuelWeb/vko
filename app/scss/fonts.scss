@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+// @font-face {
+//   font-family: Roboto;
+//   src: url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf"),
+//        url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"),
+//        url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+// }
+h1 {
+  font-family: Roboto;
+  font-weight: 100;
+  b {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+  }
+  span {
+    font-size: 2rem;
+  }
+  // font-family: Roboto, "sans-serif";
+  color: #8e8e8e;
+}
