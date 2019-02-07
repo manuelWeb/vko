@@ -1,69 +1,43 @@
 // LAYOUT
+body {
+  background-color: #111;
+}
 * { box-sizing: border-box; }
 
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-
-  @media screen
-  and (min-width : 375px)
-  and (max-width : 667px) {
-    flex-direction: column;
-  }
-
-  @media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : portrait)  {
-    flex-direction: column;
-  }
+  // justify-content: flex-start;
+  align-content: space-between;
+  height: 100vh;
 }
 
-// .gallery a {
-//   flex: 1 1 auto;
-// }
-.gallery a {
-  display: flex;
-  flex: 1 1 auto;
-  @media screen
-  and (min-width : 375px)
-  and (max-width : 667px) {
-    display: inline-block;
+
+.gallery {
+  > a {
+    width: 50%;
+    height: auto;
+
+    @media screen
+    and (min-width : 100px)
+    and (max-width : 700px) {
+      width: 100%;
+    }
+    @media screen
+    and (min-width : 950px)
+    and (max-width : 1280px) {
+      width: 33.333333%;
+    }
+
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 3px;
+    }
   }
-  @media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : portrait)  {
-    display: inline-block;
-  }
-}
-.gallery a img {
-  flex: 1 1 auto;
-  width: auto;
-  height: auto;
-  max-width: 300px;
-  max-height: 130px;
-  margin: 5px;
-  object-fit: cover;
-  @media screen
-  and (min-width : 375px)
-  and (max-width : 667px) {
-    width: 100%;
-    max-width: none;
-    max-height: none;
-    margin: 5px auto;
-  }
-  @media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : portrait)  {
-    width: 100%;
-    max-width: none;
-    max-height: none;
-    margin: 5px auto;
-  }
+
 }
 
 .to-top { object-position: top; }
