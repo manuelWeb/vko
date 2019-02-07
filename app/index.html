@@ -2,47 +2,60 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title></title>
+  <meta charset="UTF-8" />
+  <title>VKO</title>
   <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/print.css">
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/print.css" />
   <!--endbuild-->
+  <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
 </head>
 
 <body>
   <div class="header">
     <h1><b>VKO</b><span> Photographe</span> professionnel</h1>
   </div>
-  <div class="gallery">
-    <img src="./images/home/Bateaux.jpg" height="" width="" alt="">
-    <img src="./images/home/Canoe_dordogne.jpg" height="" width="" alt="">
-    <img src="./images/home/Envol.jpg" height="" width="" alt="">
-    <img src="./images/home/Feu_chateau.jpg" height="" width="" alt="">
-    <img src="./images/home/Grue.jpg" height="" width="" alt="">
-    <img src="./images/home/Haute_borne.jpg" height="" width="" alt="">
-    <img src="./images/home/Maisons_lac.jpg" height="" width="" alt="">
-    <img src="./images/home/Soudeur_02.jpg" height="" width="" alt="">
-    <img src="./images/home/accordeon.jpg" height="" width="" alt="">
-    <img src="./images/home/commemoration.jpg" height="" width="" alt="">
-    <img src="./images/home/flambeaux.jpg" height="" width="" alt="">
-    <img src="./images/home/football.jpg" height="" width="" alt="">
-    <img src="./images/home/moulins.jpg" height="" width="" alt="">
-    <img src="./images/home/nageur.jpg" height="" width="" alt="">
-    <img src="./images/home/perche_Pas_épreuve.jpg" height="" width="" alt="">
-    <img src="./images/home/pirate.jpg" height="" width="" alt="">
-    <img src="./images/home/rugby.jpg" height="" width="" alt="">
-    <img src="./images/home/saut_longueur.jpg" height="" width="" alt="">
-    <img src="./images/home/tennis.jpg" height="" width="" alt="">
-    <img src="./images/home/via_ferrata.jpg" height="" width="" alt="">
+  <div id="lightgallery" class="gallery">
+    <a href="./images/home/Bateaux.jpg"><img src="./images/home/Bateaux.jpg" alt=""></a>
+    <a href="./images/home/Canoe_dordogne.jpg"><img src="./images/home/Canoe_dordogne.jpg" alt=""></a>
+    <a href="./images/home/Envol.jpg"><img src="./images/home/Envol.jpg" alt=""></a>
+    <a href="./images/home/Feu_chateau.jpg"><img src="./images/home/Feu_chateau.jpg" alt=""></a>
+    <a href="./images/home/Grue.jpg"><img src="./images/home/Grue.jpg" alt=""></a>
+    <a href="./images/home/Haute_borne.jpg"><img src="./images/home/Haute_borne.jpg" alt=""></a>
+    <a href="./images/home/Maisons_lac.jpg"><img src="./images/home/Maisons_lac.jpg" alt=""></a>
+    <a href="./images/home/Soudeur_02.jpg"><img src="./images/home/Soudeur_02.jpg" alt=""></a>
+    <a href="./images/home/accordeon.jpg"><img src="./images/home/accordeon.jpg" alt=""></a>
+    <a href="./images/home/commemoration.jpg"><img src="./images/home/commemoration.jpg" alt=""></a>
+    <a href="./images/home/flambeaux.jpg"><img src="./images/home/flambeaux.jpg" alt=""></a>
+    <a href="./images/home/football.jpg"><img src="./images/home/football.jpg" alt=""></a>
+    <a href="./images/home/moulins.jpg"><img src="./images/home/moulins.jpg" alt=""></a>
+    <a href="./images/home/nageur.jpg"><img src="./images/home/nageur.jpg" alt=""></a>
+    <a href="./images/home/perche_Pas_épreuve.jpg"><img src="./images/home/perche_pas_epreuve.jpg" alt=""></a>
+    <a href="./images/home/pirate.jpg"><img src="./images/home/pirate.jpg" alt=""></a>
+    <a href="./images/home/rugby.jpg"><img src="./images/home/rugby.jpg" alt=""></a>
+    <a href="./images/home/saut_longueur.jpg"><img src="./images/home/saut_longueur.jpg" alt=""></a>
+    <a href="./images/home/tennis.jpg"><img src="./images/home/tennis.jpg" alt=""></a>
+    <a href="./images/home/via_ferrata.jpg"><img src="./images/home/via_ferrata.jpg" alt=""></a>
   </div>
 
-  <!--build:js js/main.min.js -->
-  <script src="js/lib/a-library.js"></script>
-  <script src="js/lib/another-library.js"></script>
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
+
+  <!-- jQuery version must be >= 1.8.0; -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+  "></script>
+  <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  <script src="js/lightgallery.js"></script> 
+
+  <!-- lightgallery plugins -->
+  <!-- <script src="js/lg-thumbnail.min.js"></script> 
+  <script src="js/lg-fullscreen.min.js"></script>  -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery();
+    });
+  </script>
 </body>
 
 </html>

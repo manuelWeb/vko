@@ -6,11 +6,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+
   @media screen
   and (min-width : 375px)
   and (max-width : 667px) {
     flex-direction: column;
   }
+
   @media only screen
   and (min-device-width : 375px)
   and (max-device-width : 667px)
@@ -19,7 +21,25 @@
   }
 }
 
-.gallery > img {
+// .gallery a {
+//   flex: 1 1 auto;
+// }
+.gallery a {
+  display: flex;
+  flex: 1 1 auto;
+  @media screen
+  and (min-width : 375px)
+  and (max-width : 667px) {
+    display: inline-block;
+  }
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait)  {
+    display: inline-block;
+  }
+}
+.gallery a img {
   flex: 1 1 auto;
   width: auto;
   height: auto;

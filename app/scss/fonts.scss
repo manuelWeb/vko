@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
 // @font-face {
-//   font-family: Roboto;
-//   src: url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf"),
-//        url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"),
-//        url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+//   font-family: 'Roboto';
+//   src: url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf");
+// }
+// @font-face {
+//   font-family: 'Roboto-Bold';
+//   src: local("../fonts/Roboto/Roboto-Light.ttf"), url("../fonts/Roboto/Roboto-Light.ttf") format("ttf");
+// }
+// @font-face {
+//   font-family: 'Roboto-Light';
+//   src: url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
 // }
 h1 {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-weight: 100;
   b {
     font-size: 3rem;
