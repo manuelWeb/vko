@@ -1,5 +1,6 @@
 // LAYOUT
 * { box-sizing: border-box; }
+body { background-color: #111; }
 
 .gallery {
   display: flex;
@@ -43,8 +44,8 @@
   flex: 1 1 auto;
   width: auto;
   height: auto;
-  max-width: 300px;
-  max-height: 130px;
+  max-width: 452px;// 300px;
+  max-height: 196px;// 130px;
   margin: 5px;
   object-fit: cover;
   @media screen
