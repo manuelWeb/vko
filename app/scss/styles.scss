@@ -3,6 +3,7 @@ body {
   background-color: #111;
 }
 * { box-sizing: border-box; }
+body { background-color: #111; }
 
 .gallery {
   display: flex;
@@ -19,23 +20,52 @@ body {
     width: 50%;
     height: auto;
 
-    @media screen
-    and (min-width : 100px)
-    and (max-width : 700px) {
-      width: 100%;
-    }
-    @media screen
-    and (min-width : 950px)
-    and (max-width : 1280px) {
-      width: 33.333333%;
-    }
-
-    > img {
-      display: block;
-      width: 100%;
-      height: auto;
-      padding: 3px;
-    }
+// .gallery a {
+//   flex: 1 1 auto;
+// }
+.gallery a {
+  display: flex;
+  flex: 1 1 auto;
+  @media screen
+  and (min-width : 375px)
+  and (max-width : 667px) {
+    // display: inline-block;
+  }
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait)  {
+    // display: inline-block;
+  }
+}
+.gallery a img {
+  flex: 1 1 auto;
+  width: auto;
+  height: auto;
+  max-width: 452px;// 300px;
+  max-height: 196px;// 130px;
+  margin: 5px;
+  object-fit: cover;
+  @media screen
+  and (min-width : 300px)
+  and (max-width : 667px) {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: none;
+    max-height: none;
+    margin: 5px auto;
+  }
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait)  {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: none;
+    max-height: none;
+    margin: 5px auto;
   }
 
 }
