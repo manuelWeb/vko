@@ -5,14 +5,15 @@
 - Horizontale
   - width max 1440px (Retina @x2 2880px à utiliser avec srcset uniquement).
 - Verticale
-  - 
+  - !important les images verticales doivent avoir 970px de large pour être affichées à 100% sur les tablettes et mobiles
 - change depth 300 to 96px
 ```shell
 for i in *.jpg; do convert -units PixelsPerInch $i -density 96 $i; done
 ```
 - change width
 ```shell
-for i in *.jpg;do convert -resize x1024 $i;done
+for i in *.jpg; do convert $i -resize 970 $i;done
+<!-- for i in *.jpg;do convert -resize x1024 $i;done -->
 ```
 - identifier le format des images
 ```shell
