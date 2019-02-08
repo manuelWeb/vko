@@ -11,33 +11,34 @@ body { background-color: #111; }
   @media screen
   and (min-width : 375px)
   and (max-width : 667px) {
-    flex-direction: column;
+    display: block;
+    width: 100%;
   }
 
   @media only screen
   and (min-device-width : 375px)
   and (max-device-width : 667px)
   and (orientation : portrait)  {
-    flex-direction: column;
+    display: block;
+    width: 100%;
   }
 }
 
-// .gallery a {
-//   flex: 1 1 auto;
-// }
 .gallery a {
   display: flex;
   flex: 1 1 auto;
   @media screen
   and (min-width : 375px)
   and (max-width : 667px) {
-    // display: inline-block;
+    display: inline-block;
+    width: 100%;
   }
   @media only screen
   and (min-device-width : 375px)
   and (max-device-width : 667px)
   and (orientation : portrait)  {
-    // display: inline-block;
+    display: inline-block;
+    width: 100%;
   }
 }
 .gallery a img {
