@@ -7,9 +7,9 @@ nav {
   -webkit-font-feature-settings: 'swsh', 'liga', 'dlig';
   font-feature-settings: 'swsh', 'liga', 'dlig';
   -webkit-font-smoothing: antialiased;
-  margin: 1em 0 0;
+  margin: 0;
   h1 {
-    margin-top: 0;
+    margin: 0;
     font-weight: normal;
     font-size: 1em;
   }
@@ -20,7 +20,7 @@ nav {
     text-decoration: none;
   }
 }
-
+// phone
 @media (max-width: 480px) {
   nav > h1,
   nav > a {
@@ -169,6 +169,9 @@ nav {
 
 @media (min-width: 481px) {
   nav {
+    margin-bottom: 2em;
+  }
+  nav {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -198,13 +201,13 @@ nav {
 
   nav h1 a::before {
     display: inline-block;
-    width: 17rem;
-    height: 17rem;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    background: #335271;
-    background: radial-gradient(ellipse at left top, #213549 0%, #335271 80%);
-    box-shadow: 0 0 0 0.8rem #335271, 1.1rem 1.1rem 5px rgba(0, 0, 0, 0.3);
+    // width: 17rem;
+    // height: 17rem;
+    // border: 1px solid rgba(255, 255, 255, 0.4);
+    // border-radius: 50%;
+    // background: #335271;
+    // background: radial-gradient(ellipse at left top, #213549 0%, #335271 80%);
+    // box-shadow: 0 0 0 0.8rem #335271, 1.1rem 1.1rem 5px rgba(0, 0, 0, 0.3);
     color: #fff;
     content: attr(data-abbr);
     text-align: center;
@@ -233,19 +236,22 @@ nav {
   }
 
   nav > a:hover,
-  nav > a:focus {
+  nav > a:focus,
+  nav > a.actif {
     background-size: 100% 5px;
     color: #ba3176;
   }
 }
 
 @media (min-width: 1025px) {
+  nav {
+    margin-bottom: 0;
+  }
   nav a:nth-of-type(-n + 2) {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
   }
-
   nav > a,
   nav h1 {
     width: auto;
