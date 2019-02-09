@@ -16,7 +16,7 @@
         addClass: '',
         startClass: 'lg-start-zoom',
         backdropDuration: 150,
-        hideBarsDelay: 3000,
+        hideBarsDelay: 100000,
 
         useLeft: false,
 
@@ -1238,7 +1238,7 @@
                 }
 
             });
-            
+
             _this.$outer.on('mousemove.lg', function() {
                 mousedown = false;
             });
